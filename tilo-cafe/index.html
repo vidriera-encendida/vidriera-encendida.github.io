@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tilo Café · Carta</title>
+<meta name="description" content="Carta de Tilo Café: cafés, pastelería y meriendas.">
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --fondo: #f6f1ea;
+    --papel: #fffdf9;
+    --tinta: #2b211b;
+    --suave: #7a6a5e;
+    --acento: #a5532e;
+    --linea: #e6dcd0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--fondo);
+    color: var(--tinta);
+    line-height: 1.45;
+    -webkit-text-size-adjust: 100%;
+  }
+  .ejemplo {
+    background: var(--tinta); color: #fff; text-align: center;
+    font: 600 13px/1.3 system-ui, sans-serif; padding: 8px 12px; letter-spacing: .02em;
+  }
+  header {
+    text-align: center; padding: 36px 20px 22px;
+  }
+  .sello {
+    width: 84px; height: 84px; border-radius: 50%; margin: 0 auto 14px;
+    border: 2px solid var(--acento); color: var(--acento);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; font-style: italic;
+  }
+  h1 { font-size: 34px; font-weight: normal; letter-spacing: .01em; }
+  header p { color: var(--suave); font-size: 15px; margin-top: 4px; font-style: italic; }
+  nav {
+    position: sticky; top: 0; z-index: 2; background: var(--fondo);
+    display: flex; gap: 8px; overflow-x: auto; padding: 10px 16px;
+    border-bottom: 1px solid var(--linea); scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+  nav a {
+    flex: none; text-decoration: none; color: var(--tinta);
+    font: 600 14px system-ui, sans-serif; padding: 8px 14px;
+    border: 1px solid var(--linea); border-radius: 999px; background: var(--papel);
+  }
+  main { max-width: 560px; margin: 0 auto; padding: 8px 16px 40px; }
+  section { padding-top: 26px; scroll-margin-top: 60px; }
+  h2 {
+    font-size: 22px; font-weight: normal; color: var(--acento);
+    border-bottom: 1px solid var(--linea); padding-bottom: 6px; margin-bottom: 6px;
+  }
+  .item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px dashed var(--linea); }
+  .item:last-child { border-bottom: 0; }
+  .item div { flex: 1; }
+  .item h3 { font-size: 17px; font-weight: 600; }
+  .item p { color: var(--suave); font-size: 14px; margin-top: 2px; }
+  .precio { font: 600 16px system-ui, sans-serif; white-space: nowrap; }
+  .nota {
+    background: var(--papel); border: 1px solid var(--linea); border-radius: 12px;
+    padding: 14px 16px; margin-top: 26px; font-size: 15px;
+  }
+  footer {
+    text-align: center; color: var(--suave); font: 14px/1.6 system-ui, sans-serif;
+    padding: 26px 20px 34px; border-top: 1px solid var(--linea);
+  }
+  footer a { color: var(--acento); }
+  .firma { margin-top: 14px; font-size: 12px; opacity: .8; }
+</style>
+</head>
+<body>
+
+<div class="ejemplo">Carta de ejemplo · Tilo Café es un local inventado</div>
+
+<header>
+  <div class="sello">T</div>
+  <h1>Tilo Café</h1>
+  <p>Café de especialidad y pastelería de la casa</p>
+</header>
+
+<nav>
+  <a href="#cafes">Cafés</a>
+  <a href="#frios">Fríos</a>
+  <a href="#pasteleria">Pastelería</a>
+  <a href="#merienda">Merienda</a>
+  <a href="#taller">Taller</a>
+</nav>
+
+<main>
+
+  <section id="cafes">
+    <h2>Cafés</h2>
+    <div class="item"><div><h3>Espresso</h3><p>Simple o doble.</p></div><span class="precio">$ 2,50</span></div>
+    <div class="item"><div><h3>Cortado</h3><p>Espresso con un toque de leche.</p></div><span class="precio">$ 2,80</span></div>
+    <div class="item"><div><h3>Latte</h3><p>Con arte en la taza, como en el taller.</p></div><span class="precio">$ 3,50</span></div>
+    <div class="item"><div><h3>Capuchino</h3><p>Espuma firme y cacao por encima.</p></div><span class="precio">$ 3,50</span></div>
+    <div class="item"><div><h3>Filtrado del día</h3><p>Pregunta por el grano de esta semana.</p></div><span class="precio">$ 3,20</span></div>
+  </section>
+
+  <section id="frios">
+    <h2>Fríos</h2>
+    <div class="item"><div><h3>Café helado</h3><p>Espresso, hielo y leche.</p></div><span class="precio">$ 3,80</span></div>
+    <div class="item"><div><h3>Limonada de la casa</h3><p>Con menta y jengibre.</p></div><span class="precio">$ 3,00</span></div>
+  </section>
+
+  <section id="pasteleria">
+    <h2>Pastelería</h2>
+    <div class="item"><div><h3>Medialuna</h3><p>De manteca, horneada cada mañana.</p></div><span class="precio">$ 1,20</span></div>
+    <div class="item"><div><h3>Budín de limón</h3><p>Porción con glaseado.</p></div><span class="precio">$ 2,40</span></div>
+    <div class="item"><div><h3>Torta de chocolate</h3><p>Porción.</p></div><span class="precio">$ 3,60</span></div>
+    <div class="item"><div><h3>Cookie de avena</h3><p>Con chips de chocolate.</p></div><span class="precio">$ 1,80</span></div>
+  </section>
+
+  <section id="merienda">
+    <h2>Merienda</h2>
+    <div class="item"><div><h3>Merienda Tilo</h3><p>Café o té + jugo + dos medialunas.</p></div><span class="precio">$ 5,90</span></div>
+    <div class="item"><div><h3>Tostado</h3><p>Jamón y queso en pan de miga.</p></div><span class="precio">$ 4,20</span></div>
+  </section>
+
+  <section id="taller">
+    <h2>Taller de latte art</h2>
+    <div class="item"><div><h3>Clase de los sábados</h3><p>Aprende a dibujar en la taza. Pregunta en la barra por el próximo grupo.</p></div><span class="precio">Consultar</span></div>
+  </section>
+
+  <div class="nota">Los precios son de ejemplo. Avísanos si tienes alguna alergia o intolerancia.</div>
+
+</main>
+
+<footer>
+  Lunes a sábado · 8 a 20 h<br>
+  <a href="#">Instagram</a> · <a href="#">WhatsApp</a>
+  <div class="firma">Carta hecha por Vidriera Encendida</div>
+</footer>
+
+</body>
+</html>
